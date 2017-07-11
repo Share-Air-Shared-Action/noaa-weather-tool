@@ -1,8 +1,10 @@
 # sasa-weather-tool
 This program is part of a bigger project called [Shared Air/Shared Action](https://www.engg.ksu.edu/chsr/SA2%20Air%20Monitoring%20Project) - [Visit Repository](https://github.com/Shared-Air-Shared-Action)
 
+Author: [paulipotter](https://github.com/paulipotter)
+
 ##### USAGE
-In order to properly run this beautiful piece of code, you need to fork [stewartwatt's NOAA API](https://github.com/stewartwatts/noaahist) and copy-paste it to the same directory as this repository.
+The NOAA API part of this program is part of a repo authored by [stewartwatt](https://github.com/stewartwatts/noaahist). 
 
 Edit the `sasa-weather-tool.sh` file according to the NOAA API to get data on the location and date desired [(Access Documentation here)](https://github.com/stewartwatts/noaahist/). The default is to run the historic data of the day before as this will be run daily and then displayed on a website. The sh file will get a CSV file with the hourly averages of the location requested and then run this python program will upload it to the postgres database.
 
