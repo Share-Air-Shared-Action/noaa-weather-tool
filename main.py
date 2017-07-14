@@ -1,7 +1,7 @@
 import psycopg2
 import csv
-#from datetime import datetime 
-#from pytz import timezone
+# from datetime import datetime 
+# from pytz import timezone
 from format import *
 from constants import *
 
@@ -16,13 +16,13 @@ with open(FILE_NAME) as csv_file:
     # Ignore first line of CSV File (Header)
     next(csv_file)
 
-    #For every row in the CSV
+    # For every row in the CSV
     for row in rw:
-        #Create a new list that discards the first 4 columns and reformats the date
+        # Create a new list that discards the first 4 columns and reformats the date
         data = list(format_list(row))
 
-        #Insert the new list to the corresponding table
-        cur.execute(  """ INSERT INTO testone
+        # Insert the new list to the corresponding table
+        cur.execute(""" INSERT INTO testone
                         (yrmodahrmn,TEMP,MIN,MAX,DEWP,
                         DIR,SPD,GUS,PCP01,PCPXX,
                         PCP06,PCP24,SD,SKC,CLG,
